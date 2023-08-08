@@ -29,7 +29,8 @@ function App() {
     return addedSquares.map((squareIndex, index) => (
       <div
         key={index}
-        className={`square ${squareIndex === 0 ? 'red' : squareIndex === 1 ? 'blue' : squareIndex === 2 ? 'green' : squareIndex === 3 ? 'yellow' : 'purple'}`}
+        className={`square ${squareIndex === 0 ? 'red' : squareIndex === 1 ? 'blue' : squareIndex === 2 ? 'green' : squareIndex === 3 ? 'yellow' : squareIndex === 4 ? 'purple': ''}`}
+        // {...console.log(squareIndex)}
       ></div>
     ));
   };
@@ -49,15 +50,15 @@ function App() {
         ></div>
         <div
           className={`green ${selectedSquare === 2 ? 'selected' : ''}`}
-          onClick={() => handleSquareClick(2)}
+          onClick={() => handleSquareClick(2)} // sets selectedSquare to 2
         ></div>
         <div
           className={`yellow ${selectedSquare === 3 ? 'selected' : ''}`}
-          onClick={() => handleSquareClick(3)}
+          onClick={() => handleSquareClick(3)} // sets selectedSquare to 3
         ></div>
         <div
           className={`purple ${selectedSquare === 4 ? 'selected' : ''}`}
-          onClick={() => handleSquareClick(4)}
+          onClick={() => handleSquareClick(4)} // sets selectedSquare to 4
         ></div>
       </div>
       <div className='flex'>
