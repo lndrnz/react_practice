@@ -6,7 +6,7 @@
   margin: 5px;
 }
 
-.red:active {
+.red.selected {
   border-color: black;
   border-style: solid;
 }
@@ -19,7 +19,7 @@
 
 }
 
-.blue:active {
+.blue.selected {
   border-color: black;
   border-style: solid;
 }
@@ -31,7 +31,7 @@
   margin: 5px;
 }
 
-.green:active {
+.green.selected {
   border-color: black;
   border-style: solid;
 }
@@ -44,7 +44,7 @@
 
 }
 
-.yellow:active {
+.yellow.selected {
   border-color: black;
   border-style: solid;
 }
@@ -57,7 +57,7 @@
 
 }
 
-.purple:active {
+.purple.selected {
   border-color: black;
   border-style: solid;
 }
