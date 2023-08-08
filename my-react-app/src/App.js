@@ -7,13 +7,13 @@ function App() {
 
   const handleAddButtonClick = () => {
     if (selectedSquare !== null) {
-      setAddedSquares([...addedSquares, selectedSquare]);
+      setAddedSquares([...addedSquares, selectedSquare]); //Sets added squares array to added squares and the selected square
     }
   };
 
   const handleDeleteButtonClick = () => {
     if (addedSquares.length > 0) {
-      setAddedSquares(addedSquares.slice(0, -1));
+      setAddedSquares(addedSquares.slice(0, -1)); // Removes the last number from the squares array
     }
   };
 
@@ -21,7 +21,7 @@ function App() {
     if (selectedSquare === index) {
       setSelectedSquare(null);
     } else {
-      setSelectedSquare(index);
+      setSelectedSquare(index); // sets selectedSquare to whatever index is in context of ternary operator
     }
   };
 
@@ -41,11 +41,11 @@ function App() {
       <div className='flex'>
         <div
           className={`red ${selectedSquare === 0 ? 'selected' : ''}`}
-          onClick={() => handleSquareClick(0)}
+          onClick={() => handleSquareClick(0)} // sets selected Square to 0
         ></div>
         <div
           className={`blue ${selectedSquare === 1 ? 'selected' : ''}`}
-          onClick={() => handleSquareClick(1)}
+          onClick={() => handleSquareClick(1)} // sets selectedSquare to 1
         ></div>
         <div
           className={`green ${selectedSquare === 2 ? 'selected' : ''}`}
@@ -62,6 +62,7 @@ function App() {
       </div>
       <div className='flex'>
         {renderAddedSquares()}
+        {/* {console.log(addedSquares)} */}
       </div>
     </>
   );
