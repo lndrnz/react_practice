@@ -1,0 +1,69 @@
+
+.red {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  margin: 5px;
+}
+
+.red:active {
+  border-color: black;
+  border-style: solid;
+}
+
+.blue {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  margin: 5px;
+
+}
+
+.blue:active {
+  border-color: black;
+  border-style: solid;
+}
+
+.green {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  margin: 5px;
+}
+
+.green:active {
+  border-color: black;
+  border-style: solid;
+}
+
+.yellow {
+  height: 50px;
+  width: 50px;
+  background-color:  yellow;
+  margin: 5px;
+
+}
+
+.yellow:active {
+  border-color: black;
+  border-style: solid;
+}
+
+.purple {
+  height: 50px;
+  width: 50px;
+  background-color: purple;
+  margin: 5px;
+
+}
+
+.purple:active {
+  border-color: black;
+  border-style: solid;
+}
+.flex {
+  display: flex;
+  margin: 20px;
+  font-size: 30px;
+  padding: 20px;
+}
